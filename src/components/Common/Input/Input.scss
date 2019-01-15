@@ -1,0 +1,27 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    label {
+        font-size: 12px;
+        opacity: 0.6;
+        margin-bottom: 5px;
+    }
+    .Input {
+        height: 35px;
+        outline: none;
+        margin-bottom: 20px;
+        border-style: none;
+        border: 0;
+        padding-left: 10px;
+        width: 100%;
+        box-sizing: border-box;
+
+        color: #5e7785;
+        font-family: 'Helvetica Neue';
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+

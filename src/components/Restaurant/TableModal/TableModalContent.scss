@@ -1,0 +1,13 @@
+.TableModalContent {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+  }
+  .orders {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}

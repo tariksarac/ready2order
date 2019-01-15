@@ -1,0 +1,18 @@
+.Header {
+  background-color: #0a2433;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px 50px;
+  box-sizing: border-box;
+
+  .menu-items {
+    display: flex;
+    .Button {
+      margin-left: 50px;
+    }
+  }
+}

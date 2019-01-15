@@ -1,0 +1,16 @@
+.MenuItem {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  text-transform: uppercase;
+  &:hover {
+    border-bottom : 2px solid #ffffff;
+  }
+
+}
+
+.active {
+  transform: scale(1.5);
+  transition: transform .2s;
+}
