@@ -9,6 +9,11 @@
   padding: 10px 50px;
   box-sizing: border-box;
 
+  .logo {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
   .menu-items {
     display: flex;
     .Button {

@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MenuItem.scss'
 
-const MenuItem = ({title, onClickAction, activeItem}) => {
+const MenuItem = ({title, onClickAction, activeItem, location}) => {
     return (
-        <div className={` MenuItem ${activeItem && ' active'}`} onClick={() => onClickAction(title)}>{title}</div>
+        <div className={` MenuItem ${activeItem && ' active'}`} onClick={() => onClickAction(location)}>{title}</div>
     );
 };
 

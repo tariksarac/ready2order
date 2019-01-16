@@ -1,6 +1,5 @@
 import React from 'react';
 import {dishes, ORDER_STATUS, orders, tables} from '../../utils/constants';
-// const uuidv1 = require('uuid/v1');
 
 import uuidv1 from 'uuid';
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Order.scss';
 import * as moment from 'moment';
 import Select from 'react-select';
-import { ORDER_STATUS, orders } from '../../../utils/constants';
+import { ORDER_STATUS } from '../../../utils/constants';
 
 class Order extends React.Component {
     static defaultProps = {};
@@ -25,6 +25,7 @@ class Order extends React.Component {
                 )}`}</div>
                 <div className={'dish'}>
                     <img
+                        alt={'dish'}
                         src={
                             'https://food-images.files.bbci.co.uk/food/recipes/simple_fish_dish_98008_16x9.jpg'
                         }

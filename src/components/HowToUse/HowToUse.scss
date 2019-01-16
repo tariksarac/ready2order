@@ -1,0 +1,11 @@
+.HowToUse {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    text-align: left;
+  }
+}

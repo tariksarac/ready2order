@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import TableContainer from './TableContainer/TableContainer';
 import { RestConsumer } from '../RestProvider/RestProvider';
 import './Restaurant.scss'
 
-const Restaurant = props => {
+const Restaurant = () => {
     return (
         <RestConsumer>
             {({ tables, orders }) => (
@@ -15,8 +14,5 @@ const Restaurant = props => {
         </RestConsumer>
     );
 };
-
-Restaurant.propTypes = {};
-Restaurant.defaultProps = {};
 
 export default Restaurant;

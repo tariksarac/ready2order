@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import Button from '../Common/Button/Button';
 import './Header.scss';
@@ -46,27 +45,40 @@ class Header extends Component {
                             READY2ORDER
                         </div>
 
-                        {isAuth && (
-                            <div className={'menu-items'}>
+                        <div className={'menu-items'}>
+                            {isAuth && (
                                 <MenuItem
                                     title={'tables'}
+                                    location={'tables'}
                                     onClickAction={this.goToLocation}
                                     activeItem={active === 'tables'}
                                 />
+                            )}
+                            {isAuth && (
                                 <MenuItem
                                     title={'orders'}
+                                    location={'orders'}
                                     onClickAction={this.goToLocation}
                                     activeItem={active === 'orders'}
                                 />
+                            )}
 
+                            {isAuth && (
                                 <MenuItem
                                     title={'users'}
+                                    location={'users'}
                                     onClickAction={this.goToLocation}
                                     activeItem={active === 'users'}
                                 />
-                                <Button buttonText={'LOG OUT'} onClickAction={logout} />
-                            </div>
-                        )}
+                            )}
+                            <MenuItem
+                                title={'HOW TO USE APP'}
+                                location={'how-to-use'}
+                                onClickAction={this.goToLocation}
+                                activeItem={active === 'how-to-use'}
+                            />
+                            {isAuth && (<Button buttonText={'LOG OUT'} onClickAction={logout} />)}
+                        </div>
                     </header>
                 )}
             </AuthConsumer>

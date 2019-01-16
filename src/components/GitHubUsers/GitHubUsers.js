@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Query } from 'react-apollo';
 import Ready2OrderLoader from "../Common/Ready2OrderLoader/Ready2OrderLoader";
 import Info from "../Common/Info/Info";

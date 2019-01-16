@@ -10,7 +10,9 @@ import Quantity from "./Quantity/Quantity";
 class SelectDish extends React.Component {
     static defaultProps = {};
 
-    static propTypes = {};
+    static propTypes = {
+        table: PropTypes.array
+    };
 
     state = {
         dish: null,
@@ -48,7 +50,7 @@ class SelectDish extends React.Component {
 
                         <Input placeholder={'Special requests'} onChange={this.onCommentChange} value={comment} />
                         <Button
-                            buttonText={'Add to order'}
+                            buttonText={'Add to orders'}
                             onClickAction={() => this.state.dish && createOrder(this.state, table, 1)}
                             style={{ marginLeft: 'auto', marginRight: '0' }}
                         />

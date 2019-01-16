@@ -5,7 +5,6 @@ import Login from './components/Login/Login';
 import HowToUse from './components/HowToUse/HowToUse';
 import ProtectedRoute from './components/Routes/ProtectedRoute/ProtectedRoute';
 import OrderedList from './components/OrderedList/OrderedList';
-import OrderedItemPreview from './components/OrderedItemPreview/OrderedItemPreview';
 import Restaurant from './components/Restaurant/Restaurant';
 import GitHubUsers from './components/GitHubUsers/GitHubUsers';
 import LoginRoute from './components/Routes/LoginRoute/LoginRoute';
