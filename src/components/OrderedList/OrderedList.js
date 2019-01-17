@@ -16,10 +16,9 @@ class OrderedList extends React.Component {
     };
 
     getNumberOfPages = (list, itemsPerPage) => {
-        // Calculate the number pages to be displayed...
         const numberOfPages = Math.ceil(list.length / itemsPerPage);
         return Array.from(Array(numberOfPages).keys());
-    }
+    };
 
     paginatedList = (list, itemsPerPage) => {
         const { currentPage } = this.state;
@@ -28,11 +27,11 @@ class OrderedList extends React.Component {
             currentPage * parseInt(itemsPerPage, 0),
             (currentPage + 1) * parseInt(itemsPerPage, 0),
         );
-    }
+    };
 
-    onClickPageNumber = (page) => {
+    onClickPageNumber = page => {
         this.setState({ currentPage: page });
-    }
+    };
 
     render() {
         const { currentPage } = this.state;
@@ -44,7 +43,12 @@ class OrderedList extends React.Component {
                             <div className={'title'}>Ordered</div>
 
                             {this.paginatedList(orders, 5).map((item, index) => (
-                                <Order order={item} key={index} ordersPage handleChangeOrderStatus={handleChangeOrderStatus}/>
+                                <Order
+                                    order={item}
+                                    key={index}
+                                    ordersPage
+                                    handleChangeOrderStatus={handleChangeOrderStatus}
+                                />
                             ))}
                         </div>
 

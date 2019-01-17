@@ -38,7 +38,7 @@ class Login extends React.Component {
                                     value={password}
                                 />
                                 <div className={'buttons'}>
-                                    <Button buttonText={'HOW TO USE APP'} onClickAction={()=> this.props.history.push('/how-to-use')} blue/>
+                                    {/*<Button buttonText={'HOW TO USE APP'} onClickAction={()=> this.props.history.push('/how-to-use')} blue/>*/}
                                     <Button buttonText={'LOG IN'} onClickAction={login} />
                                 </div>
 

@@ -11,7 +11,7 @@ class SelectDish extends React.Component {
     static defaultProps = {};
 
     static propTypes = {
-        table: PropTypes.array
+        table: PropTypes.number
     };
 
     state = {

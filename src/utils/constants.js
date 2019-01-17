@@ -44,7 +44,7 @@ export const tables = [
     {
         number: 1,
         shape: SHAPE.circle,
-        size: TABLE_SIZE.big,
+        size: TABLE_SIZE.regular,
         status: STATUS.available,
     },
     {
@@ -62,13 +62,19 @@ export const tables = [
     {
         number: 4,
         shape: SHAPE.circle,
-        size: TABLE_SIZE.big,
+        size: TABLE_SIZE.regular,
         status: STATUS.available,
     },
     {
         number: 5,
         shape: SHAPE.circle,
-        size: TABLE_SIZE.regular,
+        size: TABLE_SIZE.big,
+        status: STATUS.available,
+    },
+    {
+        number: 6,
+        shape: SHAPE.circle,
+        size: TABLE_SIZE.big,
         status: STATUS.available,
     },
 ];

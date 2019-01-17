@@ -14,7 +14,7 @@ class TableContainer extends React.Component {
 
     static propTypes = {
         table: PropTypes.object,
-        orders: PropTypes.object,
+        orders: PropTypes.array,
     };
 
     state = {

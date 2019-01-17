@@ -8,7 +8,10 @@ const Restaurant = () => {
         <RestConsumer>
             {({ tables, orders }) => (
                 <div className={'Restaurant'}>
-                    {tables.map((item, index) => <TableContainer table={item} key={index} orders={orders}/>)}
+                    <div className={'title'}>Restaurant</div>
+                    <div className={'tables'}>
+                        {tables.map((item, index) => <TableContainer table={item} key={index} orders={orders}/>)}
+                    </div>
                 </div>
             )}
         </RestConsumer>
