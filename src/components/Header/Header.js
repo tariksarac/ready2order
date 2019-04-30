@@ -42,7 +42,7 @@ class Header extends Component {
                             onClick={() => {
                                 this.goHome();
                             }}>
-                            READY2ORDER
+                            restaurant orders
                         </div>
 
                         <div className={'menu-items'}>

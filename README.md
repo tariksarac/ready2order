@@ -1,3 +1,5 @@
+This is the code for restaurant-orders website hosted at https://restaurant-orders.netlify.com
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
